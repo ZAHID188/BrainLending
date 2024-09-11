@@ -2,11 +2,10 @@ FROM node:20.17.0
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY src/package*.json ./
 RUN npm install
 
-COPY . .
+COPY src/ .
 
-RUN npm run build
 
 CMD ["npm", "run", "serve"]

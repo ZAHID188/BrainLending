@@ -5,6 +5,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY . .
+COPY src/ .
+RUN python manage.py migrate
 
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "your_django_project.wsgi:application"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
