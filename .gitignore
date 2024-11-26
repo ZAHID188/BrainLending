@@ -4,7 +4,7 @@ Backend/Django_Brainlending/db.sqlite3
 .DS_Store
 Frontend/vue_brain_lending/node_modules
 
-/dist
+
 
 
 # local env files
@@ -72,7 +72,7 @@ coverage.xml
 
 # Test and coverage reports
 *.egg-info/
-dist/
+
 build/
 *.egg
 
