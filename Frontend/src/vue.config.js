@@ -6,6 +6,6 @@ const { defineConfig } = require('@vue/cli-service')
 
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/BrainLending/'  // Use 'BrainLending' as your repository name
+    ? '/BrainLending/tree/main/Frontend/src/dist/'  // Use 'BrainLending' as your repository name
     : '/'
 }
